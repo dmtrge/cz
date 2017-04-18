@@ -10,27 +10,17 @@ using System.Windows.Forms;
 
 namespace Employment_center_v2._0
 {
-    public partial class genform : Form
+    public partial class searchformcs : Form
     {
-        public genform()
+        public searchformcs()
         {
             InitializeComponent();
         }
 
-        private void genform_Load(object sender, EventArgs e)
+        private void searchformcs_Load(object sender, EventArgs e)
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "jobDatabaseDataSet.vacantiondb". При необходимости она может быть перемещена или удалена.
             this.vacantiondbTableAdapter.Fill(this.jobDatabaseDataSet.vacantiondb);
-
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void поискToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
         }
     }
