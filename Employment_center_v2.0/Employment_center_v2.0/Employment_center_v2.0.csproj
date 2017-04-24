@@ -60,6 +60,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="aboutvacanciton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aboutvacanciton.Designer.cs">
+      <DependentUpon>aboutvacanciton.cs</DependentUpon>
+    </Compile>
     <Compile Include="admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="aboutvacanciton.resx">
+      <DependentUpon>aboutvacanciton.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="admin.resx">
       <DependentUpon>admin.cs</DependentUpon>
     </EmbeddedResource>

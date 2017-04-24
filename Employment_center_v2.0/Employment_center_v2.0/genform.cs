@@ -17,6 +17,7 @@ namespace Employment_center_v2._0
             InitializeComponent();
         }
 
+
         private void genform_Load(object sender, EventArgs e)
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "jobDatabaseDataSet.vacantiondb". При необходимости она может быть перемещена или удалена.
@@ -33,6 +34,12 @@ namespace Employment_center_v2._0
 
         private void поискToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void dataGridView1_Click(object sender, EventArgs e)
+        {
+         //   profile = Convert.ToString(dataGridView1.CurrentRow.Cells[1].Value);
 
         }
     }
