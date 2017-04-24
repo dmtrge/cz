@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace Employment_center_v2._0
 {
-    public partial class headband : Form
+    public partial class admin : Form
     {
-        public headband()
+        public admin()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void backbtn_Click(object sender, EventArgs e)
         {
-            admin admin = new admin();
-            admin.Show();
-            this.Hide();
+            headband headband = new headband();
+            this.Close();
+            headband.Show();
         }
     }
 }

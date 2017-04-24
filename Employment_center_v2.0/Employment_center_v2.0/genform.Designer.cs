@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.jobDatabaseDataSet = new Employment_center_v2._0.JobDatabaseDataSet();
+            this.vacantiondbBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vacantiondbTableAdapter = new Employment_center_v2._0.JobDatabaseDataSetTableAdapters.vacantiondbTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.profileDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.specialityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,22 +43,18 @@
             this.graphDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.locationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.aboutDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vacantiondbBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.jobDatabaseDataSet = new Employment_center_v2._0.JobDatabaseDataSet();
-            this.vacantiondbTableAdapter = new Employment_center_v2._0.JobDatabaseDataSetTableAdapters.vacantiondbTableAdapter();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.поискToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.actualDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vacantiondbBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobDatabaseDataSet)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.vacantiondbBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
@@ -67,13 +66,30 @@
             this.expDataGridViewTextBoxColumn,
             this.graphDataGridViewTextBoxColumn,
             this.locationDataGridViewTextBoxColumn,
-            this.aboutDataGridViewTextBoxColumn});
+            this.aboutDataGridViewTextBoxColumn,
+            this.dateDataGridViewTextBoxColumn,
+            this.actualDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.vacantiondbBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 27);
+            this.dataGridView1.Location = new System.Drawing.Point(-9, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1305, 544);
-            this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.Size = new System.Drawing.Size(1488, 900);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // jobDatabaseDataSet
+            // 
+            this.jobDatabaseDataSet.DataSetName = "JobDatabaseDataSet";
+            this.jobDatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // vacantiondbBindingSource
+            // 
+            this.vacantiondbBindingSource.DataMember = "vacantiondb";
+            this.vacantiondbBindingSource.DataSource = this.jobDatabaseDataSet;
+            // 
+            // vacantiondbTableAdapter
+            // 
+            this.vacantiondbTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -82,6 +98,7 @@
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             this.idDataGridViewTextBoxColumn.ReadOnly = true;
             this.idDataGridViewTextBoxColumn.Visible = false;
+            this.idDataGridViewTextBoxColumn.Width = 59;
             // 
             // profileDataGridViewTextBoxColumn
             // 
@@ -89,6 +106,7 @@
             this.profileDataGridViewTextBoxColumn.HeaderText = "profile";
             this.profileDataGridViewTextBoxColumn.Name = "profileDataGridViewTextBoxColumn";
             this.profileDataGridViewTextBoxColumn.ReadOnly = true;
+            this.profileDataGridViewTextBoxColumn.Width = 88;
             // 
             // specialityDataGridViewTextBoxColumn
             // 
@@ -96,6 +114,7 @@
             this.specialityDataGridViewTextBoxColumn.HeaderText = "speciality";
             this.specialityDataGridViewTextBoxColumn.Name = "specialityDataGridViewTextBoxColumn";
             this.specialityDataGridViewTextBoxColumn.ReadOnly = true;
+            this.specialityDataGridViewTextBoxColumn.Width = 109;
             // 
             // companyDataGridViewTextBoxColumn
             // 
@@ -103,6 +122,7 @@
             this.companyDataGridViewTextBoxColumn.HeaderText = "company";
             this.companyDataGridViewTextBoxColumn.Name = "companyDataGridViewTextBoxColumn";
             this.companyDataGridViewTextBoxColumn.ReadOnly = true;
+            this.companyDataGridViewTextBoxColumn.Width = 109;
             // 
             // requirementsDataGridViewTextBoxColumn
             // 
@@ -110,6 +130,7 @@
             this.requirementsDataGridViewTextBoxColumn.HeaderText = "requirements";
             this.requirementsDataGridViewTextBoxColumn.Name = "requirementsDataGridViewTextBoxColumn";
             this.requirementsDataGridViewTextBoxColumn.ReadOnly = true;
+            this.requirementsDataGridViewTextBoxColumn.Width = 138;
             // 
             // salaryDataGridViewTextBoxColumn
             // 
@@ -117,6 +138,7 @@
             this.salaryDataGridViewTextBoxColumn.HeaderText = "salary";
             this.salaryDataGridViewTextBoxColumn.Name = "salaryDataGridViewTextBoxColumn";
             this.salaryDataGridViewTextBoxColumn.ReadOnly = true;
+            this.salaryDataGridViewTextBoxColumn.Width = 86;
             // 
             // expDataGridViewTextBoxColumn
             // 
@@ -124,6 +146,7 @@
             this.expDataGridViewTextBoxColumn.HeaderText = "exp";
             this.expDataGridViewTextBoxColumn.Name = "expDataGridViewTextBoxColumn";
             this.expDataGridViewTextBoxColumn.ReadOnly = true;
+            this.expDataGridViewTextBoxColumn.Width = 70;
             // 
             // graphDataGridViewTextBoxColumn
             // 
@@ -131,6 +154,7 @@
             this.graphDataGridViewTextBoxColumn.HeaderText = "graph";
             this.graphDataGridViewTextBoxColumn.Name = "graphDataGridViewTextBoxColumn";
             this.graphDataGridViewTextBoxColumn.ReadOnly = true;
+            this.graphDataGridViewTextBoxColumn.Width = 86;
             // 
             // locationDataGridViewTextBoxColumn
             // 
@@ -145,59 +169,43 @@
             this.aboutDataGridViewTextBoxColumn.HeaderText = "about";
             this.aboutDataGridViewTextBoxColumn.Name = "aboutDataGridViewTextBoxColumn";
             this.aboutDataGridViewTextBoxColumn.ReadOnly = true;
+            this.aboutDataGridViewTextBoxColumn.Width = 86;
             // 
-            // vacantiondbBindingSource
+            // dateDataGridViewTextBoxColumn
             // 
-            this.vacantiondbBindingSource.DataMember = "vacantiondb";
-            this.vacantiondbBindingSource.DataSource = this.jobDatabaseDataSet;
+            this.dateDataGridViewTextBoxColumn.DataPropertyName = "date";
+            this.dateDataGridViewTextBoxColumn.HeaderText = "date";
+            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
+            this.dateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dateDataGridViewTextBoxColumn.Width = 77;
             // 
-            // jobDatabaseDataSet
+            // actualDataGridViewTextBoxColumn
             // 
-            this.jobDatabaseDataSet.DataSetName = "JobDatabaseDataSet";
-            this.jobDatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // vacantiondbTableAdapter
-            // 
-            this.vacantiondbTableAdapter.ClearBeforeFill = true;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.поискToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1317, 24);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // поискToolStripMenuItem
-            // 
-            this.поискToolStripMenuItem.Name = "поискToolStripMenuItem";
-            this.поискToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
-            this.поискToolStripMenuItem.Text = "Поиск";
-            this.поискToolStripMenuItem.Click += new System.EventHandler(this.поискToolStripMenuItem_Click);
+            this.actualDataGridViewTextBoxColumn.DataPropertyName = "actual";
+            this.actualDataGridViewTextBoxColumn.HeaderText = "actual";
+            this.actualDataGridViewTextBoxColumn.Name = "actualDataGridViewTextBoxColumn";
+            this.actualDataGridViewTextBoxColumn.ReadOnly = true;
+            this.actualDataGridViewTextBoxColumn.Width = 88;
             // 
             // genform
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1317, 705);
+            this.ClientSize = new System.Drawing.Size(1976, 1085);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.menuStrip1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "genform";
             this.Text = "genform";
             this.Load += new System.EventHandler(this.genform_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vacantiondbBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobDatabaseDataSet)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.vacantiondbBindingSource)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
+
         private System.Windows.Forms.DataGridView dataGridView1;
         private JobDatabaseDataSet jobDatabaseDataSet;
         private System.Windows.Forms.BindingSource vacantiondbBindingSource;
@@ -212,7 +220,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn graphDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn locationDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn aboutDataGridViewTextBoxColumn;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem поискToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn actualDataGridViewTextBoxColumn;
     }
 }

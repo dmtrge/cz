@@ -21,6 +21,8 @@ namespace Employment_center_v2._0
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "jobDatabaseDataSet.vacantiondb". При необходимости она может быть перемещена или удалена.
             this.vacantiondbTableAdapter.Fill(this.jobDatabaseDataSet.vacantiondb);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "jobDatabaseDataSet.vacantiondb". При необходимости она может быть перемещена или удалена.
+            this.vacantiondbTableAdapter.Fill(this.jobDatabaseDataSet.vacantiondb);
 
         }
 
