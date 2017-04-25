@@ -40,6 +40,7 @@ namespace Employment_center_v2._0
         private void dataGridView1_Click(object sender, EventArgs e)
         {
          //   profile = Convert.ToString(dataGridView1.CurrentRow.Cells[1].Value);
+         //dataGridView1.
 
         }
     }

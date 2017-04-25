@@ -16,7 +16,16 @@ namespace Employment_center_v2._0
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new headband());
+            headband form2 = new headband();
+            DateTime end = DateTime.Now + TimeSpan.FromSeconds(5);
+            form2.Show();
+            while (end > DateTime.Now)
+            {
+                Application.DoEvents();
+            }
+            form2.Close();
+            form2.Dispose();
+            Application.Run(new genform());
         }
     }
 }

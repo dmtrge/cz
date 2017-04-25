@@ -111,6 +111,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="JobDatabaseDataSet.xsc">
       <DependentUpon>JobDatabaseDataSet.xsd</DependentUpon>
@@ -144,6 +145,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>JobDatabase.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\shahtery.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
