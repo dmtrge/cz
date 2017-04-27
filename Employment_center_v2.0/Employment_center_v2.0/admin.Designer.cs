@@ -125,7 +125,7 @@
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(576, 459);
+            this.textBox10.Location = new System.Drawing.Point(276, 447);
             this.textBox10.Margin = new System.Windows.Forms.Padding(2);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(122, 20);
