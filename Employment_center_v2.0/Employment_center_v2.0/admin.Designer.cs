@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.profiletbox = new System.Windows.Forms.TextBox();
+            this.specialitytbox = new System.Windows.Forms.TextBox();
+            this.companytbox = new System.Windows.Forms.TextBox();
+            this.exptbox = new System.Windows.Forms.TextBox();
+            this.salarytbox = new System.Windows.Forms.TextBox();
+            this.requirementstbox = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.locationtbox = new System.Windows.Forms.TextBox();
+            this.graphtbox = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.backbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,56 +48,57 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.createcal = new System.Windows.Forms.MonthCalendar();
+            this.addbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // profiletbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(276, 51);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(269, 20);
-            this.textBox1.TabIndex = 0;
+            this.profiletbox.Location = new System.Drawing.Point(276, 51);
+            this.profiletbox.Margin = new System.Windows.Forms.Padding(2);
+            this.profiletbox.Name = "profiletbox";
+            this.profiletbox.Size = new System.Drawing.Size(269, 20);
+            this.profiletbox.TabIndex = 0;
             // 
-            // textBox2
+            // specialitytbox
             // 
-            this.textBox2.Location = new System.Drawing.Point(276, 75);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(269, 20);
-            this.textBox2.TabIndex = 1;
+            this.specialitytbox.Location = new System.Drawing.Point(276, 75);
+            this.specialitytbox.Margin = new System.Windows.Forms.Padding(2);
+            this.specialitytbox.Name = "specialitytbox";
+            this.specialitytbox.Size = new System.Drawing.Size(269, 20);
+            this.specialitytbox.TabIndex = 1;
             // 
-            // textBox3
+            // companytbox
             // 
-            this.textBox3.Location = new System.Drawing.Point(276, 99);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(269, 20);
-            this.textBox3.TabIndex = 2;
+            this.companytbox.Location = new System.Drawing.Point(276, 99);
+            this.companytbox.Margin = new System.Windows.Forms.Padding(2);
+            this.companytbox.Name = "companytbox";
+            this.companytbox.Size = new System.Drawing.Size(269, 20);
+            this.companytbox.TabIndex = 2;
             // 
-            // textBox4
+            // exptbox
             // 
-            this.textBox4.Location = new System.Drawing.Point(276, 171);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(269, 20);
-            this.textBox4.TabIndex = 5;
+            this.exptbox.Location = new System.Drawing.Point(276, 171);
+            this.exptbox.Margin = new System.Windows.Forms.Padding(2);
+            this.exptbox.Name = "exptbox";
+            this.exptbox.Size = new System.Drawing.Size(269, 20);
+            this.exptbox.TabIndex = 5;
             // 
-            // textBox5
+            // salarytbox
             // 
-            this.textBox5.Location = new System.Drawing.Point(276, 147);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(269, 20);
-            this.textBox5.TabIndex = 4;
+            this.salarytbox.Location = new System.Drawing.Point(276, 147);
+            this.salarytbox.Margin = new System.Windows.Forms.Padding(2);
+            this.salarytbox.Name = "salarytbox";
+            this.salarytbox.Size = new System.Drawing.Size(269, 20);
+            this.salarytbox.TabIndex = 4;
             // 
-            // textBox6
+            // requirementstbox
             // 
-            this.textBox6.Location = new System.Drawing.Point(276, 123);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(269, 20);
-            this.textBox6.TabIndex = 3;
+            this.requirementstbox.Location = new System.Drawing.Point(276, 123);
+            this.requirementstbox.Margin = new System.Windows.Forms.Padding(2);
+            this.requirementstbox.Name = "requirementstbox";
+            this.requirementstbox.Size = new System.Drawing.Size(269, 20);
+            this.requirementstbox.TabIndex = 3;
             // 
             // textBox7
             // 
@@ -107,21 +108,21 @@
             this.textBox7.Size = new System.Drawing.Size(269, 20);
             this.textBox7.TabIndex = 8;
             // 
-            // textBox8
+            // locationtbox
             // 
-            this.textBox8.Location = new System.Drawing.Point(276, 219);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(269, 20);
-            this.textBox8.TabIndex = 7;
+            this.locationtbox.Location = new System.Drawing.Point(276, 219);
+            this.locationtbox.Margin = new System.Windows.Forms.Padding(2);
+            this.locationtbox.Name = "locationtbox";
+            this.locationtbox.Size = new System.Drawing.Size(269, 20);
+            this.locationtbox.TabIndex = 7;
             // 
-            // textBox9
+            // graphtbox
             // 
-            this.textBox9.Location = new System.Drawing.Point(276, 195);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(269, 20);
-            this.textBox9.TabIndex = 6;
+            this.graphtbox.Location = new System.Drawing.Point(276, 195);
+            this.graphtbox.Margin = new System.Windows.Forms.Padding(2);
+            this.graphtbox.Name = "graphtbox";
+            this.graphtbox.Size = new System.Drawing.Size(269, 20);
+            this.graphtbox.TabIndex = 6;
             // 
             // textBox10
             // 
@@ -223,18 +224,29 @@
             this.label9.TabIndex = 20;
             this.label9.Text = "Дата создания";
             // 
-            // monthCalendar1
+            // createcal
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(276, 274);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 21;
+            this.createcal.Location = new System.Drawing.Point(276, 274);
+            this.createcal.Name = "createcal";
+            this.createcal.TabIndex = 21;
+            // 
+            // addbtn
+            // 
+            this.addbtn.Location = new System.Drawing.Point(562, 571);
+            this.addbtn.Name = "addbtn";
+            this.addbtn.Size = new System.Drawing.Size(75, 23);
+            this.addbtn.TabIndex = 22;
+            this.addbtn.Text = "add";
+            this.addbtn.UseVisualStyleBackColor = true;
+            this.addbtn.Click += new System.EventHandler(this.addbtn_Click);
             // 
             // admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(709, 590);
-            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.addbtn);
+            this.Controls.Add(this.createcal);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -247,14 +259,14 @@
             this.Controls.Add(this.backbtn);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.locationtbox);
+            this.Controls.Add(this.graphtbox);
+            this.Controls.Add(this.exptbox);
+            this.Controls.Add(this.salarytbox);
+            this.Controls.Add(this.requirementstbox);
+            this.Controls.Add(this.companytbox);
+            this.Controls.Add(this.specialitytbox);
+            this.Controls.Add(this.profiletbox);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "admin";
             this.Text = "admin";
@@ -265,15 +277,15 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox profiletbox;
+        private System.Windows.Forms.TextBox specialitytbox;
+        private System.Windows.Forms.TextBox companytbox;
+        private System.Windows.Forms.TextBox exptbox;
+        private System.Windows.Forms.TextBox salarytbox;
+        private System.Windows.Forms.TextBox requirementstbox;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox locationtbox;
+        private System.Windows.Forms.TextBox graphtbox;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Button backbtn;
         private System.Windows.Forms.Label label1;
@@ -285,6 +297,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.MonthCalendar createcal;
+        private System.Windows.Forms.Button addbtn;
     }
 }

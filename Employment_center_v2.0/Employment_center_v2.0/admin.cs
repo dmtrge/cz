@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Employment_center_v2._0
 {
@@ -23,5 +24,34 @@ namespace Employment_center_v2._0
             this.Close();
             headband.Show();
         }
+
+        private void addbtn_Click(object sender, EventArgs e)
+        {
+
+            var сonnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\JobDatabase.mdf;Integrated Security=True;Connect Timeout=30";
+            using (var myConnection = new SqlConnection(сonnectionString))
+            {
+                myConnection.Open();
+                var sqlCommand = new SqlCommand("INSERT INTO vacantiondb (profile, speciality, company, requirements,salary, exp, graph, location) VALUES(@profile, @speciality, @company, @requirements, @salary, @exp, @graph, @location)",myConnection);
+
+                sqlCommand.Parameters.Add(new SqlParameter("@profile", profiletbox.Text));
+                sqlCommand.Parameters.Add(new SqlParameter("@speciality",specialitytbox.Text));
+                sqlCommand.Parameters.Add(new SqlParameter("@company",companytbox.Text));
+                sqlCommand.Parameters.Add(new SqlParameter("@requirements",requirementstbox.Text));
+                sqlCommand.Parameters.Add(new SqlParameter("@salary",salarytbox.Text));
+                sqlCommand.Parameters.Add(new SqlParameter("@exp",exptbox.Text));
+                sqlCommand.Parameters.Add(new SqlParameter("@graph",graphtbox.Text));
+                sqlCommand.Parameters.Add(new SqlParameter("@location",locationtbox.Text));
+
+                try
+                {
+                    sqlCommand.ExecuteNonQuery();
+                }
+                finally
+                {
+                    myConnection.Close();
+                }
+            }
+         }
     }
 }
