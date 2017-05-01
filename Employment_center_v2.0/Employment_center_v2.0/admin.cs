@@ -27,7 +27,7 @@ namespace Employment_center_v2._0
 
         private void addbtn_Click(object sender, EventArgs e)
         {
-
+// Ой, весь день с подключением возился. Как оказалось, я забыл объявить переменную myConnection в sqlCommand. Печаль.Беда.
             var сonnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\JobDatabase.mdf;Integrated Security=True;Connect Timeout=30";
             using (var myConnection = new SqlConnection(сonnectionString))
             {
