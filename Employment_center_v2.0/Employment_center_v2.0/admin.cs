@@ -31,7 +31,7 @@ namespace Employment_center_v2._0
             var сonnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\dmtrge\OneDrive\projects\CZ\Employment_center_v2.0\Employment_center_v2.0\JobDatabase.mdf;Integrated Security=True;Connect Timeout=30";
             using (var myConnection = new SqlConnection(сonnectionString))
             {
-                myConnection.Open();
+                myConnection.Open(); 
                 var sqlCommand = new SqlCommand("INSERT INTO vacantiondb (profile, speciality, company, requirements,salary, exp, graph, location) VALUES(@profile, @speciality, @company, @requirements, @salary, @exp, @graph, @location)",myConnection);
 
                 sqlCommand.Parameters.Add(new SqlParameter("@profile", profiletbox.Text));
