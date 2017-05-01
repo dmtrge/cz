@@ -24,7 +24,7 @@ namespace Employment_center_v2._0
                 Application.DoEvents();
             }
             form2.Close();
-            form2.Dispose();
+            form2.Dispose(); //магие вне Хогвардса запрещена, но если честно, мне было лень возиться с таймером.
             Application.Run(new genform());
         }
     }
