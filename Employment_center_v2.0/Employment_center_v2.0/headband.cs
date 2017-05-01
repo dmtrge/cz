@@ -16,7 +16,7 @@ namespace Employment_center_v2._0
         {
             InitializeComponent();
         }
-
+//Если бы я знал, что будет все так просто, я бы взялся в последнюю неделю за дипломку :) 
         private void button1_Click(object sender, EventArgs e)
         {
             admin admin = new admin();
