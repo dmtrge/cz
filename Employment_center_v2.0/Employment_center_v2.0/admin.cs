@@ -49,9 +49,5 @@ namespace Employment_center_v2._0
                 }
                 finally
                 {
-                    myConnection.Close();
-                }
-            }
-         }
-    }
-}
+                    myConnection.Close(); //тут я решил сэкономить 4 строчки на закрытии скобок. Мне же это еще печатать))
+ }}}}}
